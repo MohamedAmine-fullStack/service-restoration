@@ -1,0 +1,270 @@
+/* Styles de base */
+html, body {
+    height: 100%; /* Assurez-vous que le corps prend toute la hauteur */
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* La hauteur minimale de la page est 100% de la hauteur de la fenêtre */
+}
+
+header {
+    background-color: #2b84c0; /* Couleur rouge foncé */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f1c40f; /* Couleur jaune */
+}
+
+main {
+    flex: 1; /* Permet au main de prendre tout l'espace disponible */
+    padding: 40px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #27ae60; /* Couleur verte */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2ecc71; /* Couleur verte plus claire */
+}
+
+footer {
+    background-color: #34495e; /* Couleur gris foncé */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Colle le pied de page au bas */
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 10;
+}
+/* Styles de base */
+html, body {
+    height: 100%; /* Assurez-vous que le corps prend toute la hauteur */
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    background-color: #f4f4f4; /* Couleur de fond */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* La hauteur minimale de la page est 100% de la hauteur de la fenêtre */
+}
+
+header {
+    background-color: #2bacc0; /* Couleur rouge foncé */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+main {
+    flex: 1; /* Permet au main de prendre tout l'espace disponible */
+    padding: 40px;
+    text-align: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif; /* Police de caractères générale */
+    background-color: #f4f4f4; /* Couleur de fond douce */
+    margin: 0;
+    padding: 20px;
+}
+
+.reservation-form {
+    background-color: #fff; /* Fond blanc pour le formulaire */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding: 20px; /* Espacement interne */
+    max-width: 500px; /* Largeur maximale du formulaire */
+    margin: auto; /* Centrer le formulaire */
+    
+}
+
+h2 {
+    text-align: center; /* Centrer le titre */
+    color: #333; /* Couleur du texte */
+}
+
+label {
+    display: block; /* Afficher chaque label sur une nouvelle ligne */
+    margin-bottom: 5px; /* Espacement sous le label */
+    color: #555; /* Couleur du texte des labels */
+}
+
+.input-large {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur du champ */
+    font-size: 16px; /* Augmente la taille de la police */
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 4px; /* Coins arrondis */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    margin-bottom: 15px; /* Espacement sous chaque champ */
+}
+
+.input-large:focus {
+    border-color: #007BFF; /* Couleur de la bordure au focus */
+    outline: none; /* Supprime le contour par défaut */
+}
+
+.btn-submit {
+    background-color: #007BFF; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    padding: 10px; /* Espacement interne du bouton */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    font-size: 16px; /* Taille de la police du bouton */
+    width: 100%; /* Prend toute la largeur disponible */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.hero {
+    position: relative;
+    color: white;
+    padding: 0; /* Enlève le padding */
+    height: 60vh; /* Hauteur de la section */
+    overflow: hidden; /* Masque tout débordement */
+}
+
+.hero img {
+    position: absolute; /* Positionne l'image par rapport à son conteneur */
+    top: 0; /* Aligne l'image en haut */
+    left: 0; /* Aligne l'image à gauche */
+    width: 100%; /* L'image prend toute la largeur */
+    height: 100%; /* L'image prend toute la hauteur de la section */
+    object-fit: cover; /* Recadre l'image pour couvrir l'espace */
+    /* object-position: bottom; Coupe le bas de l'image */
+}
+
+.about-restaurant, .reservation-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.image-container {
+    position: relative;
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    overflow: hidden; /* Masque tout débordement */
+}
+
+.image-container img {
+    width: 100%; /* L'image prend toute la largeur */
+    height: auto; /* L'image conserve son ratio d'aspect */
+    object-fit: cover; /* Recadre l'image pour couvrir l'espace */
+    /* object-position: bottom; Coupe le bas de l'image */
+}
+footer {
+    background-color: #343a40; /* Couleur de fond du footer */
+    color: white; /* Couleur du texte */
+    padding: 20px 0; /* Espacement intérieur */
+    text-align: center; /* Centre le texte */
+}
+
+.footer-container {
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    justify-content: space-around; /* Espace entre les colonnes */
+    margin-bottom: 10px; /* Marge en bas */
+}
+
+.footer-info, .footer-hours, .footer-social {
+    max-width: 200px; /* Largeur maximale des colonnes */
+}
+
+.footer-social a {
+    display: block; /* Affiche chaque lien sur une nouvelle ligne */
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Enlève le soulignement */
+}
+
+.footer-social a:hover {
+    text-decoration: underline; /* Souligne au survol */
+}
